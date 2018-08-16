@@ -61,3 +61,16 @@ E:\My Friend Tracker\My Friend Tracker\obj\Debug\My Friend Tracker.csproj.CoreCo
 E:\My Friend Tracker\My Friend Tracker\obj\Debug\My Friend Tracker.exe
 E:\My Friend Tracker\My Friend Tracker\obj\Debug\My Friend Tracker.pdb
 C:\Users\0100623918\Documents\My Friend Tracker\My Friend Tracker\obj\Debug\My_Friend_Tracker.Form3.resources
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\bin\Debug\My Friend Tracker.exe.config
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\bin\Debug\My Friend Tracker.xml
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\bin\Debug\My Friend Tracker.exe
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\bin\Debug\My Friend Tracker.pdb
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My Friend Tracker.csprojResolveAssemblyReference.cache
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My_Friend_Tracker.Form1.resources
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My_Friend_Tracker.Form2.resources
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My_Friend_Tracker.Form3.resources
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My_Friend_Tracker.Properties.Resources.resources
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My Friend Tracker.csproj.GenerateResource.Cache
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My Friend Tracker.csproj.CoreCompileInputs.cache
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My Friend Tracker.exe
+C:\Users\0100623918\Documents\SoftwareProject\My Friend Tracker\obj\Debug\My Friend Tracker.pdb

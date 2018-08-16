@@ -26,6 +26,11 @@ namespace My_Friend_Tracker
         private bool button = false;
 
         //Constructor.
+        /*
+         * <summary>
+         * Constructor
+         * </summary>
+         */
         public Form1()
         {
             //Initialize the form.
@@ -372,6 +377,16 @@ namespace My_Friend_Tracker
         {
             Form3 form3 = new Form3(this);
             form3.Show();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
