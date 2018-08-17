@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Main class of the program
+    /// </summary>
     static class Program
     {
         /// <summary>

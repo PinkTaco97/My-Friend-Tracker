@@ -4,6 +4,141 @@
         <name>My Friend Tracker</name>
     </assembly>
     <members>
+        <member name="T:My_Friend_Tracker.Form1">
+            <summary>
+            The Form1 class.
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form1.friends">
+            <summary>
+            List that hold all of the friends data.
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form1.currentFriend">
+            <summary>
+            The index of the current friend.
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form1.dataTable">
+            <summary>
+            The datatable.
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form1.button">
+            <summary>
+            If using the buttons to navigate.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.#ctor">
+            <summary>
+            Form1 Constructor.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Called when the form loads.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Form1_Closing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Called when the window is closing.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.ReadFriends">
+            <summary>
+            Read the friends from the .csv
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.WriteFriends">
+            <summary>
+            Write the friends to the .csv file.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.CreateTable">
+            <summary>
+            Create the Datatable.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.LoadTable">
+            <summary>
+            Load the friends into the table.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.data_SelectionChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the selection in the data grid changes.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Search_Text_TextChanged(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Seach text changes.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Search(System.String)">
+            <summary>
+            Search for the friend.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.LoadFriend(System.Int32)">
+            <summary>
+            Load the selected friend into the form.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.UpdateFriend(System.Int32)">
+            <summary>
+            Update the selected friend.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.AddFriend(System.String,System.String,System.String,System.String)">
+            <summary>
+            Add friend.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.DeleteFriend(System.Int32)">
+            <summary>
+            Delete the selected friend.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Update_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Update Friend Button is Clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Delete_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Delete Friend Button is Clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Add_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Add Friend Button is Clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Next_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Next Button is clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Previous_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Previous Button is clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.First_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the First Button is clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Last_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Last Button is clicked.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form1.Birthday_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Upcoming Birthdays Button is Clicked.
+            </summary>
+        </member>
         <member name="F:My_Friend_Tracker.Form1.components">
             <summary>
             Required designer variable.
@@ -19,6 +154,34 @@
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:My_Friend_Tracker.Form2">
+            <summary>
+            The Add Friend Form Class
+            </summary>
+            <summary>
+            The Form2.Designer Class
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form2.form">
+            <summary>
+            Reference to the main form
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form2.#ctor(My_Friend_Tracker.Form1)">
+            <summary>
+            The Forms Constructor
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form2.Form2_Closing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Called when the form is closing
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form2.Add_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the Add Friend button is clicked
             </summary>
         </member>
         <member name="F:My_Friend_Tracker.Form2.components">
@@ -38,6 +201,66 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:My_Friend_Tracker.Form3">
+            <summary>
+            The Upcoming Birthdays Form Class
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form3.form">
+            <summary>
+            Referance to the main form.
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form3.months">
+            <summary>
+            A List to hold all the months
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form3.currentmonth">
+            <summary>
+            The current Month
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Form3.dataTable">
+            <summary>
+            The DataTable
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.#ctor(My_Friend_Tracker.Form1)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.InitializeMonths">
+            <summary>
+            Setup the List of months.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.Form3_Closing(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Called when the form is closing.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.CreateTable">
+            <summary>
+            Create the DataTable.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.LoadTable(System.Int32)">
+            <summary>
+            Load the friends into the table.
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.Next_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the next button is clicked
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Form3.Previous_Btn_Click(System.Object,System.EventArgs)">
+            <summary>
+            Called when the previous button is clicked
+            </summary>
+        </member>
         <member name="F:My_Friend_Tracker.Form3.components">
             <summary>
             Required designer variable.
@@ -55,9 +278,64 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:My_Friend_Tracker.Program">
+            <summary>
+            The Main class of the program
+            </summary>
+        </member>
         <member name="M:My_Friend_Tracker.Program.Main">
             <summary>
             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:My_Friend_Tracker.Friend">
+            <summary>
+            The Freind Class
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Friend.name">
+            <summary>
+            The Friends Name
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Friend.likes">
+            <summary>
+            The Friends Likes
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Friend.dislikes">
+            <summary>
+            The Friends Dislikes
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Friend.dob">
+            <summary>
+            The Friends Date of Birth
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Friend.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            The Freind Constructor
+            </summary>
+        </member>
+        <member name="T:My_Friend_Tracker.Month">
+            <summary>
+            The Month Class
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Month.friends">
+            <summary>
+            A List of Friends who have birthdays in this month
+            </summary>
+        </member>
+        <member name="F:My_Friend_Tracker.Month.name">
+            <summary>
+            The Name of the month
+            </summary>
+        </member>
+        <member name="M:My_Friend_Tracker.Month.#ctor(System.String)">
+            <summary>
+            The Months Constructor
             </summary>
         </member>
         <member name="T:My_Friend_Tracker.Properties.Resources">

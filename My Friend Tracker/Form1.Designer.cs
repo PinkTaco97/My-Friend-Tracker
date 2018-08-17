@@ -144,7 +144,6 @@
             this.label4.Size = new System.Drawing.Size(100, 25);
             this.label4.TabIndex = 2;
             this.label4.Text = "Search:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Search_Text
             // 
@@ -282,7 +281,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(365, 84);
             this.panel2.TabIndex = 18;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Form1
             // 

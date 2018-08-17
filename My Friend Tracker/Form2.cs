@@ -11,13 +11,20 @@ using System.IO;
 
 namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Add Friend Form Class
+    /// </summary>
     public partial class Form2 : Form
     {
 
-        //Attributes.
+        /// <summary>
+        /// Reference to the main form
+        /// </summary>
         private Form1 form;
 
-        //Constructor.
+        /// <summary>
+        /// The Forms Constructor
+        /// </summary>
         public Form2(Form1 form)
         {
             //Initialize the form.
@@ -30,20 +37,18 @@ namespace My_Friend_Tracker
             form.Hide();
         }
 
-        //Called when the form loads.
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        //Called when the window is closing.
+        /// <summary>
+        /// Called when the form is closing
+        /// </summary>
         private void Form2_Closing(object sender, FormClosingEventArgs e)
         {
             //Show the form.
             form.Show();
         }
-
-        //Called when the Add Friend button is clicked.
+        
+        /// <summary>
+        /// Called when the Add Friend button is clicked
+        /// </summary>
         private void Add_Btn_Click(object sender, EventArgs e)
         {
             //The message if one of the inputs are empty

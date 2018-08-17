@@ -3,26 +3,28 @@ using System.Collections.Generic;
 
 namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Month Class
+    /// </summary>
     public class Month
     {
-        //List that hold all of the friends data.
+        /// <summary>
+        /// A List of Friends who have birthdays in this month
+        /// </summary>
         public List<Friend> friends = new List<Friend>();
 
-        //The name of the month.
+        /// <summary>
+        /// The Name of the month
+        /// </summary>
         public string name;
 
+        /// <summary>
+        /// The Months Constructor
+        /// </summary>
         public Month(string name)
         {
             //Set the name of the month.
             this.name = name;
-        }
-
-        public void PrintAll()
-        {
-            foreach (Friend friend in friends)
-            {
-                Console.WriteLine(friend.name + ", " + friend.dob);
-            }
         }
     }
 }

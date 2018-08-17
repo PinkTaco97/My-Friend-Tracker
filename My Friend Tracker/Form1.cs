@@ -11,26 +11,34 @@ using System.IO;
 
 namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Form1 class.
+    /// </summary>
     public partial class Form1 : Form
     {
-        //List that hold all of the friends data.
+        /// <summary>
+        /// List that hold all of the friends data.
+        /// </summary>
         public List<Friend> friends = new List<Friend>();
 
-        //The index of the current friend.
+        /// <summary>
+        /// The index of the current friend.
+        /// </summary>
         public int currentFriend = 99;
 
-        //The datatable.
+        /// <summary>
+        /// The datatable.
+        /// </summary>
         DataTable dataTable = new DataTable();
 
-        //If using the buttons to navigate.
+        /// <summary>
+        /// If using the buttons to navigate.
+        /// </summary>
         private bool button = false;
 
-        //Constructor.
-        /*
-         * <summary>
-         * Constructor
-         * </summary>
-         */
+        /// <summary>
+        /// Form1 Constructor.
+        /// </summary>
         public Form1()
         {
             //Initialize the form.
@@ -43,7 +51,9 @@ namespace My_Friend_Tracker
             CreateTable();
         }
 
-        //Called when the form loads.
+        /// <summary>
+        /// Called when the form loads.
+        /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
             //Add the Selection Changed Event Handler.
@@ -57,14 +67,18 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the window is closing.
+        /// <summary>
+        /// Called when the window is closing.
+        /// </summary>
         private void Form1_Closing(object sender, FormClosingEventArgs e)
         {
             //Update the .csv file.
             WriteFriends();
         }
 
-        //Read the friends from the .csv
+        /// <summary>
+        /// Read the friends from the .csv
+        /// </summary>
         public void ReadFriends()
         {
             //Read the file.
@@ -88,7 +102,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Write the friends to the .csv file.
+        /// <summary>
+        /// Write the friends to the .csv file.
+        /// </summary>
         private void WriteFriends()
         {
             //The file path.
@@ -108,7 +124,9 @@ namespace My_Friend_Tracker
             File.AppendAllText(@"MyFriendsData.csv", sb.ToString());
         }
 
-        //Create the Datatable.
+        /// <summary>
+        /// Create the Datatable.
+        /// </summary>
         private void CreateTable()
         {
             //Add the columns.
@@ -124,7 +142,9 @@ namespace My_Friend_Tracker
             LoadTable();
         }
 
-        //Load the friends into the table.
+        /// <summary>
+        /// Load the friends into the table.
+        /// </summary>
         private void LoadTable()
         {
             dataTable.Clear();
@@ -152,7 +172,9 @@ namespace My_Friend_Tracker
             LoadFriend(0);
         }
 
-        //Called when the selection in the data grid changes.
+        /// <summary>
+        /// Called when the selection in the data grid changes.
+        /// </summary>
         private void data_SelectionChanged(object sender, EventArgs e)
         {
             //Load the selected friend if the buttons werent used.
@@ -163,7 +185,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the Seach text changes.
+        /// <summary>
+        /// Called when the Seach text changes.
+        /// </summary>
         private void Search_Text_TextChanged(object sender, EventArgs e)
         {
             //Get the search request
@@ -173,7 +197,9 @@ namespace My_Friend_Tracker
             Search(query);
         }
 
-        //Search for the friend.
+        /// <summary>
+        /// Search for the friend.
+        /// </summary>
         private void Search(string query)
         {
             //Clear the current selected friend.
@@ -197,7 +223,10 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Load the selected friend into the form.
+
+        /// <summary>
+        /// Load the selected friend into the form.
+        /// </summary>
         private void LoadFriend(int index)
         {
             //make sure the friend isnt the current friend.
@@ -233,7 +262,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Update the selected friend.
+        /// <summary>
+        /// Update the selected friend.
+        /// </summary>
         private void UpdateFriend(int index)
         {
             //If there is a friend to Update
@@ -256,7 +287,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Add friend.
+        /// <summary>
+        /// Add friend.
+        /// </summary>
         public void AddFriend(string name, string likes, string dislikes, string dob)
         {
             //Create a new friend.
@@ -269,7 +302,9 @@ namespace My_Friend_Tracker
             LoadTable();
         }
 
-        //Delete the selected friend.
+        /// <summary>
+        /// Delete the selected friend.
+        /// </summary>
         private void DeleteFriend(int index)
         {
             //Ask if they are sure.
@@ -287,7 +322,10 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the Update Friend Button is Clicked.
+
+        /// <summary>
+        /// Called when the Update Friend Button is Clicked.
+        /// </summary>
         private void Update_Btn_Click(object sender, EventArgs e)
         {
             //Update the current friend.
@@ -296,8 +334,10 @@ namespace My_Friend_Tracker
             //Update the Data Table.
             LoadTable();
         }
-        
-        //Called when the Delete Friend Button is Clicked.
+
+        /// <summary>
+        /// Called when the Delete Friend Button is Clicked.
+        /// </summary>
         private void Delete_Btn_Click(object sender, EventArgs e)
         {
             //Delete the current friend.
@@ -307,14 +347,18 @@ namespace My_Friend_Tracker
             LoadTable();
         }
 
-        //Called when the Add Friend Button is Clicked.
+        /// <summary>
+        /// Called when the Add Friend Button is Clicked.
+        /// </summary>
         private void Add_Btn_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2(this);
             form2.Show();
         }
 
-        //Called when the Next Button is clicked.
+        /// <summary>
+        /// Called when the Next Button is clicked.
+        /// </summary>
         private void Next_Btn_Click(object sender, EventArgs e)
         {
             //We are useing the buttons to navigate.
@@ -333,7 +377,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the Previous Button is clicked.
+        /// <summary>
+        /// Called when the Previous Button is clicked.
+        /// </summary>
         private void Previous_Btn_Click(object sender, EventArgs e)
         {
             //We are useing the buttons to navigate.
@@ -352,7 +398,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the First Button is clicked.
+        /// <summary>
+        /// Called when the First Button is clicked.
+        /// </summary>
         private void First_Btn_Click(object sender, EventArgs e)
         {
             //We are useing the buttons to navigate.
@@ -362,7 +410,9 @@ namespace My_Friend_Tracker
             LoadFriend(0);
         }
 
-        //Called when the Last Button is clicked.
+        /// <summary>
+        /// Called when the Last Button is clicked.
+        /// </summary>
         private void Last_Btn_Click(object sender, EventArgs e)
         {
             //We are useing the buttons to navigate.
@@ -372,21 +422,13 @@ namespace My_Friend_Tracker
             LoadFriend((friends.Count - 1));
         }
 
-        //Called when the Upcoming Birthdays Button is Clicked.
+        /// <summary>
+        /// Called when the Upcoming Birthdays Button is Clicked.
+        /// </summary>
         private void Birthday_Btn_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3(this);
             form3.Show();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

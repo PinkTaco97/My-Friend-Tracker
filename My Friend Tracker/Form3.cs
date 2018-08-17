@@ -11,24 +11,36 @@ using System.IO;
 
 namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Upcoming Birthdays Form Class
+    /// </summary>
     public partial class Form3 : Form
     {
-        //Reference to the main form.
+        /// <summary>
+        /// Referance to the main form.
+        /// </summary>
         private Form1 form;
 
-        //A list to hold all the months.
+        /// <summary>
+        /// A List to hold all the months
+        /// </summary>
         private List<Month> months = new List<Month>();
 
-        //The current month.
+        /// <summary>
+        /// The current Month
+        /// </summary>
         private int currentmonth = 0;
 
-        //The datatable.
+        /// <summary>
+        /// The DataTable
+        /// </summary>
         DataTable dataTable = new DataTable();
 
-        //Constructor.
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Form3(Form1 form)
         {
-
             //Initialize the form.
             InitializeComponent();
 
@@ -51,7 +63,9 @@ namespace My_Friend_Tracker
 
         }
 
-        //Setup the month list.
+        /// <summary>
+        /// Setup the List of months.
+        /// </summary>
         private void InitializeMonths()
         {
             //Add the months to the list.
@@ -80,20 +94,18 @@ namespace My_Friend_Tracker
             CreateTable();
         }
 
-        //Called when the form loads.
-        private void Form3_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        //Called when the window is closing.
+        /// <summary>
+        /// Called when the form is closing.
+        /// </summary>
         private void Form3_Closing(object sender, FormClosingEventArgs e)
         {
             //Show the form.
             form.Show();
         }
 
-        //Create the Datatable.
+        /// <summary>
+        /// Create the DataTable.
+        /// </summary>
         private void CreateTable()
         {
             //Add the columns.
@@ -109,7 +121,9 @@ namespace My_Friend_Tracker
             LoadTable(currentmonth);
         }
 
-        //Load the friends into the table.
+        /// <summary>
+        /// Load the friends into the table.
+        /// </summary>
         private void LoadTable(int month)
         {
             //Clear the datatable.
@@ -138,7 +152,9 @@ namespace My_Friend_Tracker
             }
         }
 
-        //Called when the next button is clicked.
+        /// <summary>
+        /// Called when the next button is clicked
+        /// </summary>
         private void Next_Btn_Click(object sender, EventArgs e)
         {
             //Update the currentmonth.
@@ -155,7 +171,9 @@ namespace My_Friend_Tracker
             LoadTable(currentmonth);
         }
 
-        //Called when the next button is clicked.
+        /// <summary>
+        /// Called when the previous button is clicked
+        /// </summary>
         private void Previous_Btn_Click(object sender, EventArgs e)
         {
             //Update the currentmonth.

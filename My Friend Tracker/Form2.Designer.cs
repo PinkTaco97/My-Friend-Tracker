@@ -1,5 +1,8 @@
 ﻿namespace My_Friend_Tracker
 {
+    /// <summary>
+    /// The Form2.Designer Class
+    /// </summary>
     partial class Form2
     {
         /// <summary>
@@ -144,7 +147,6 @@
             this.Name = "Form2";
             this.Text = "Add a Friend";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_Closing);
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
